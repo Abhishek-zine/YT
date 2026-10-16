@@ -58,7 +58,7 @@ veil = Image.new("RGBA", b.size, (0,0,0,0)); ImageDraw.Draw(veil).rectangle([480
 veil = veil.filter(ImageFilter.GaussianBlur(60)); b.paste(veil, (0,0), veil)
 glow_text(b, (560, 640), "MAHABUDDHI", ImageFont.truetype(BOLD, 150), WHITE, CYAN, 18, anchor="lm")
 ImageDraw.Draw(b).text((566, 760), "Superintelligence, simply explained.", font=ImageFont.truetype(MED, 64), fill=CYAN, anchor="lm")
-ImageDraw.Draw(b).text((568, 870), "New explainers every week  ·  Hindi + English", font=ImageFont.truetype(MED, 42), fill=(180,190,220), anchor="lm")
+ImageDraw.Draw(b).text((568, 870), "New explainers every week  ·  Watch in your language", font=ImageFont.truetype(MED, 42), fill=(180,190,220), anchor="lm")
 b.save(f"{OUT}/banner-2560x1440.png")
 
 # Safe-area preview so you can check what phones show
