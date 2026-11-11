@@ -729,7 +729,7 @@ open_task_folder_on_completion = true
 
 # Channel defaults (added for this channel)
 tts_server = "azure-tts-v1"            # Edge TTS, free, no key
-voice_name = "hi-IN-MadhurNeural-Male"  # male Hindi; English: "en-IN-PrabhatNeural-Male"
+voice_name = "en-US-AndrewNeural-Male"  # male US English; Hindi: "hi-IN-MadhurNeural-Male"
 video_aspect_pexels = "9:16"            # Shorts
 
 # The WebUI writes the remaining preferences automatically. Uncomment values

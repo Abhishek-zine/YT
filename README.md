@@ -22,7 +22,7 @@ git clone --recurse-submodules <this repo> && cd YT
 Then edit `tools/MoneyPrinterTurbo/config.toml` (git-ignored, never commit it):
 - `anthropic_api_key`: writes the scripts (https://platform.claude.com/settings/keys)
 - `pexels_api_keys = ["..."]`: free stock footage (https://www.pexels.com/api/)
-- Voice: defaults to `hi-IN-MadhurNeural-Male` (Hindi, male). For English use `en-IN-PrabhatNeural-Male`.
+- Voice: defaults to `en-US-AndrewNeural-Male` (US English, male), for a US and international audience.
 
 Make a video:
 
@@ -30,6 +30,7 @@ Make a video:
 ./make-video.sh "3 money habits nobody teaches you"            # AI writes script, male AI voice
 VOICE_FILE=my_voice.mp3 ./make-video.sh "topic" "exact script"  # your own recorded narration
 ./make-video.sh "topic" --video-aspect 16:9                     # long-form instead of Shorts
+./make-series.sh series/jensen-huang-si                          # render a whole written series (5 Shorts)
 ./webui.sh                                                      # browser UI at http://127.0.0.1:8501
 ```
 
